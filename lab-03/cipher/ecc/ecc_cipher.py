@@ -1,4 +1,7 @@
 import sys
+import os
+# Add parent directory to path so Python can find the ui module
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from ui.ecc import Ui_MainWindow
 import requests
